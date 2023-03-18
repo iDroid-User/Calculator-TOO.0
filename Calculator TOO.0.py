@@ -2,7 +2,7 @@ HISTORY=[]
 last_answers=HISTORY
 EXPRESSIONS=[] #The expression of the last calculation will be stored as a string for later presentation when scrolling History.
 global last_answer
-global gapped #Formatting. Keeps the calculation collected in consecutive lines.
+global gapped #Formatting. Helps print the calculation in consecutive lines.
 global mode
 
 def calculation():
