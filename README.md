@@ -9,3 +9,5 @@ FUTURE UPDATES AT A GLANCE:
   a) Menu
   b) Scrolling history
   c) More mathematical functions, potentially solve-for-a-variable
+
+The "TOO" in its name alludes to its verbosity.
