@@ -10,4 +10,4 @@ FUTURE UPDATES AT A GLANCE:
   b) Scrolling history
   c) More mathematical functions, potentially solve-for-a-variable
 
-The "TOO" in its name alludes to its verbosity.
+The "TOO" in its name alludes to its talkative nature.
