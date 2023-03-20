@@ -5,6 +5,11 @@ global last_answer
 global gapped #Formatting. Helps print the calculation in consecutive lines.
 global mode
 
+def menu():
+    print("\nCALCULATOR TOO.0\n" + "─" * 16)
+    mode="Main Menu"
+    print(mode + "\n" + '―' * len(mode))  # U+2015, Horizontal Bar
+
 def calculation():
     looper=True
     gapped=False
@@ -61,25 +66,27 @@ def show_work(gapped, op1, cc1, arg1):
         HISTORY.append(answer)
         print(answer)
         #last_answers=HISTORY[]
-        #print(last_answers)
-        #next_step()
+
     elif(op1=="-"):
         answer=arg1-arg2
         HISTORY.append(answer)
         print(answer)
-        #next_step()
+
     elif(op1=="*"):
         answer=arg1*arg2
         HISTORY.append(answer)
-        #next_step()
+        print(answer)
+
     elif(op1=="/"):
         answer=arg1/arg2
         HISTORY.append(answer)
-        #next_step()
+        print(answer)
 
 '''def next_step():
     #print("\n\nCALCULATOR TOO.0\n\n\nHistory\n-------\n\n" + str(last_answers))
     print("\n\nCALCULATOR TOO.0\n\n\nHistory\n-------")
     #print("CALCULATOR TOO.0\n\n  (Enter 'clear' to exit current operation.)")'''
+
+menu()
 
 calculation()
