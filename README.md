@@ -8,6 +8,6 @@ will perform basic arithmetic of two floats (or more if answers are operated on)
 FUTURE UPDATES AT A GLANCE:
   a) Menu
   b) Scrolling history
-  c) More mathematical functions, potentially solve-for-a-variable
+  c) More mathematical functions, potentially solve-for-x
 
 The "TOO" in its name alludes to its talkative nature.
