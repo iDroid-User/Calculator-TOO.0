@@ -9,8 +9,8 @@ def menu():
     print("\nCALCULATOR TOO.0\n" + "─" * 16)
     mode="Main Menu"
     print(mode + "\n" + '―' * len(mode))  # U+2015, Horizontal Bar
-    
-    print("C ")
+    print("1. Calculator\n\n2. History\n\n3. Memory\n")
+    mode_selection=input(int("Enter mode: ")) #Try to accept alphabetic or numerical answers.
 
 def calculation():
     looper=True
@@ -18,7 +18,7 @@ def calculation():
     while(looper==True):
         #print("CALCULATOR TOO.0\n\n\nHistory\n-------\n" + str(last_answers) + "\n")
         print("\nCALCULATOR TOO.0\n" + "─" * 16)
-        mode="Calculation Mode"
+        mode="Calculator Mode"
         print(mode + "\n" + '―' * len(mode))  # U+2015, Horizontal Bar
         history_subtitle()
         arg1=float(input("Enter quantity: ")) #Later version might not even prompt user for 'quantity,' but instead ask for the entire expression (more streamlined).
