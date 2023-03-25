@@ -9,6 +9,8 @@ def menu():
     print("\nCALCULATOR TOO.0\n" + "─" * 16)
     mode="Main Menu"
     print(mode + "\n" + '―' * len(mode))  # U+2015, Horizontal Bar
+    
+    print("C ")
 
 def calculation():
     looper=True
@@ -87,6 +89,6 @@ def show_work(gapped, op1, cc1, arg1):
     print("\n\nCALCULATOR TOO.0\n\n\nHistory\n-------")
     #print("CALCULATOR TOO.0\n\n  (Enter 'clear' to exit current operation.)")'''
 
-menu()
+menu() #Probably call after calculation(). A true, dedicated calculator should launch ready to calculate before offering other services.
 
 calculation()
