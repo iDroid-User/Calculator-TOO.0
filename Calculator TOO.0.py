@@ -10,9 +10,39 @@ def menu():
     mode="Main Menu"
     print(mode + "\n" + '―' * len(mode))  # U+2015, Horizontal Bar
     print("1. Calculator\n\n2. History\n\n3. Memory\n")
-    mode_selection=input(int("Enter mode: ")) #Try to accept alphabetic or numerical answers.
 
-def calculation():
+    while True: #Scans for option 1.
+        mode_select=input("Enter mode: ") #Try to accept alphabetic or numerical answers.
+        mode_select=mode_select.lower()
+        if mode_select in ["1", "c", "calculator"]:
+            calculator()
+        elif mode_select in ["q", "quit", "exit"]:
+            calculator()
+        else:
+            break
+
+    while True: #scans for option 2.
+        mode_select=input("Enter mode: ")
+        mode_select=mode_select.lower()
+        if mode_select in ["2", or "h", or "history"]:
+            history()
+        elif mode_select in ["q", "quit", "exit"]:
+            calculator()
+        else:
+            break
+    
+    while True: #Scans for option 3.
+        mode_select=input("Enter mode: ")
+        mode_select=mode_select.lower()
+        if mode_select in ["3", "m", "memory"]:
+            memory()
+        elif mode_select in ["q", "quit", "exit"]:
+            calculator()
+        else:
+            break
+
+
+def calculator():
     looper=True
     gapped=False
     while(looper==True):
@@ -32,6 +62,11 @@ def calculation():
             else:
                 print("Please enter a valid operator.\n")
                 gapped=True
+
+#def history():
+
+
+def memory():
 
 def history_subtitle():
     string='History'
@@ -84,11 +119,6 @@ def show_work(gapped, op1, cc1, arg1):
         HISTORY.append(answer)
         print(answer)
 
-'''def next_step():
-    #print("\n\nCALCULATOR TOO.0\n\n\nHistory\n-------\n\n" + str(last_answers))
-    print("\n\nCALCULATOR TOO.0\n\n\nHistory\n-------")
-    #print("CALCULATOR TOO.0\n\n  (Enter 'clear' to exit current operation.)")'''
+calculator() #A true, dedicated calculator should launch ready to calculate before offering other services.
 
-menu() #Probably call after calculation(). A true, dedicated calculator should launch ready to calculate before offering other services.
-
-calculation()
+menu()
